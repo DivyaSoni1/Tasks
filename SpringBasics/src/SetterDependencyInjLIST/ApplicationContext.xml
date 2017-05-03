@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+<bean id="Test" class="SetterDependencyInjLIST.TestBean">  
+<property name="id" value="1"></property>  
+<property name="name" value="priya"></property>  
+  </bean>
+  
+<bean id="Sample" class="SetterDependencyInjLIST.SampleBean">  
+<property name="stuData">
+<list>  
+<value>Java class</value>  
+<value>Java class</value>  
+<value>Java is island 123</value>  
+</list>  
+</property>   
+  
+<property name="tb" ref="Test"></property>  
+</bean>  
+</beans>  
