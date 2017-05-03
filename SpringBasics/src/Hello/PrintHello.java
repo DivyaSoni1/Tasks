@@ -14,5 +14,6 @@ public class PrintHello {
 		
 		Student student=(Student) factory.getBean("Studentbean");
 		student.displayname();
+		system.out.println("displayed");
 	}
 	}
